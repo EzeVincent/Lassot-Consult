@@ -1,0 +1,265 @@
+.accounting-software-hero{
+  background: url(images/accounting-software.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 60vh;
+  min-height: 60vh;
+  margin-top: 80px;
+  z-index: 5;
+}
+.auditandassurance-hero{
+  background: url(images/auditandassurance.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 60vh;
+  min-height: 60vh;
+  margin-top: 80px;
+  z-index: 5;
+}
+.bookkeeping-hero{
+  background: url(images/book_keeping.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 60vh;
+  min-height: 60vh;
+  margin-top: 80px;
+  z-index: 5;
+}
+.business-growth-hero{
+  background: url(images/business_advisory.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 60vh;
+  min-height: 60vh;
+  margin-top: 80px;
+  z-index: 5;
+}
+.financial-consulting-hero{
+  background: url(images/financial_consulting.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 60vh;
+  min-height: 60vh;
+  margin-top: 80px;
+  z-index: 5;
+}
+.financial-modelling-hero{
+  background: url(images/financial_modelling.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 60vh;
+  min-height: 60vh;
+  margin-top: 80px;
+  z-index: 5;
+}
+.forensic-audit-hero{
+  background: url(images/forensic_audit.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 60vh;
+  min-height: 60vh;
+  margin-top: 80px;
+  z-index: 5;
+}
+.tax-planning-hero{
+  background: url(images/tax.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 60vh;
+  min-height: 60vh;
+  margin-top: 80px;
+  z-index: 5;
+}
+
+.service-hero{
+  width: 100%;
+  height: 60vh;
+  min-height: 60vh;
+  background-color: rgb(27, 26, 26, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+h1{
+  color:  var(--primary-color);
+  text-align: center;
+  font-size: 40px;
+  overflow: none;
+  margin: 10px;
+  transition: ease;
+  animation-name: bounce;
+  animation-timing-function: 5s;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  transition-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+}
+@keyframes bounce {
+  0%
+  {
+      transform: translateY(-200px); opacity: 1;
+  }
+  20%,60%{
+      transform: translateY(0); opacity: 1;
+  }
+  40% {
+      transform: translateY(-30px); opacity: 1;
+  }
+  80% {
+      transform: translateY(-15px); opacity: 1;
+  }
+  100% {
+      transform: translateY(0); opacity: 1;
+  }
+}
+
+
+.service-hero p{
+  color: var(--secondary-color);
+  text-align: center;
+  margin: 15px;
+  font-size: 18px;
+  width: auto;
+  max-width: 700px;
+  transition: ease;
+  animation-name: apear;
+  animation-timing-function: 2s;
+  animation-duration: 1s;
+  animation-delay: 1.7s;
+  transition-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes apear {
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+  
+}
+
+
+.services-cta{
+  overflow: none;
+  color: black;
+  background-color: var(--cta-color);
+  padding: 4px 6px;
+  border-radius: 15px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  margin: 10px;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+  font-size: 12px;
+  min-width: 80px;
+  transition: ease;
+  animation-name: apear2;
+  animation-timing-function: 2s;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  transition-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes apear2{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+  
+}
+
+.service-hero button:hover{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+
+
+.services-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 40px;
+  position: relative;
+}
+.services-details::after{
+  content:'';
+  width: 50%;
+  height: 50%;
+ 
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  background-color: paleturquoise;
+  opacity: 0.2;
+  z-index: 1;
+}
+.services-details::before{
+  content:'';
+  width: 50%;
+  height: 50%;
+ 
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  background-color: var(--primary-color);
+  opacity: 0.05;
+  z-index: 1;
+}
+.services-details h3{
+  margin: 10px;
+  z-index: 5;
+}
+.services-details ol{
+  margin: 0px 0px;
+  z-index: 5;
+
+}
+.litem{
+  font-weight: bold;
+  margin-left: 30px;
+  z-index: 5;
+}
+.services-details li{
+  margin-left: 20px;
+  margin: 10px 0px;
+  z-index: 5;
+}
+.services-details ul{
+  margin-left: 30px;
+  list-style: square;
+  z-index: 5;
+}
+.services-details p{
+  margin: 20px 10px;
+  z-index: 5;
+}
